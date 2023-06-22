@@ -23,3 +23,6 @@ echo "executing bytecodes/09.m (swap)"
 
 echo "executing bytecodes/12.m (add)"
 ./monty bytecodes/12.m
+
+echo "executing bytecodes/13.m (nop)"
+./monty bytecodes/13.m
