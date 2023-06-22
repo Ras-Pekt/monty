@@ -18,6 +18,7 @@ The main Monty opcodes include:
 
 # Installation
 To use this intepreter, clone this repositroy and compile it as follows:
+
 `
 	gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty
 `
