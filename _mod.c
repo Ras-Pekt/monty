@@ -1,6 +1,7 @@
 #include "monty.h"
 /**
- * _mod - computes the modulus of the second top element by the top element of the stack
+ * _mod - computes the modulus of the second top element
+ *        by the top element of the stack
  * @stack: double pointer to top node in stack
  * @line_number: line number of command
  * Return: void
