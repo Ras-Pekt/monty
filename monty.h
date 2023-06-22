@@ -40,10 +40,12 @@ typedef struct instruction_s
 
 void _push(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, unsigned int line_number);
+void _pint(stack_t **stack, unsigned int line_number);
 
 void file_reader(FILE *fd);
 int _isdigit(char *str);
 void execute_opcodes(char *line, stack_t **stack, instruction_t *opcodes,
 		   int line_number);
+void free_stack(stack_t **stack);
 
 #endif

@@ -1,5 +1,4 @@
 #include "monty.h"
-#include <stdio.h>
 /**
  * file_reader - opens and reads the file provided
  * @fd: file descriptor
@@ -14,6 +13,7 @@ void file_reader(FILE *fd)
 	instruction_t opcodes[] = {
 		{"push", _push},
 		{"pall", _pall},
+		{"pint", _pint},
 		{NULL, NULL}
 	};
 
