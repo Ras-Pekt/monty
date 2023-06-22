@@ -18,6 +18,7 @@ void file_reader(FILE *fd)
 		{"swap", _swap},
 		{"add", _add},
 		{"nop", _nop},
+		{"sub", _sub},
 		{NULL, NULL}
 	};
 
