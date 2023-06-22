@@ -29,3 +29,6 @@ echo "executing bytecodes/13.m (nop)"
 
 echo "executing bytecodes/19.m (sub)"
 ./monty bytecodes/19.m
+
+echo "executing bytecodes/20.m (div)"
+./monty bytecodes/20.m
