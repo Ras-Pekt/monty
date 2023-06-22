@@ -9,6 +9,9 @@ echo "executing bytecodes/001.m"
 echo "executing bytecodes/00.m"
 ./monty bytecodes/00.m
 
+echo "executing bytecodes/01.m"
+./monty bytecodes/01.m
+
 echo "executing bytecodes/06.m"
 ./monty bytecodes/06.m
 
