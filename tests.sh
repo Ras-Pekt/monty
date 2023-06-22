@@ -21,5 +21,5 @@ echo "executing bytecodes/07 (pop).m"
 echo "executing bytecodes/09.m (swap)"
 ./monty bytecodes/09.m
 
-#echo "executing bytecodes/12.m"
-#./monty bytecodes/12.m
+echo "executing bytecodes/12.m (add)"
+./monty bytecodes/12.m

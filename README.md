@@ -12,9 +12,9 @@ The main Monty opcodes include:
 - [pall](_pall.c) - prints all the values on the stack following the LIFO rule
 - [pint](_pint.c) - prints the value at the top of the stack
 - [pop](_pop.c) - removes the top element of the stack
-- swap - swaps the top two elements of the stack
-- add - adds the top two elements of the stack
-- nop - does not do anything
+- [swap](_swap.c) - swaps the top two elements of the stack
+- [add](_add.c) - adds the top two elements of the stack
+- [nop](_nop.c) - does not do anything
 
 ## Installation
 To use this intepreter, clone this repositroy and compile it as follows:

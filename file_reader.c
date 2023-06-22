@@ -16,7 +16,7 @@ void file_reader(FILE *fd)
 		{"pint", _pint},
 		{"pop", _pop},
 		{"swap", _swap},
-		/*{"add", _add},*/
+		{"add", _add},
 		/*{"nop", _nop},*/
 		{NULL, NULL}
 	};
