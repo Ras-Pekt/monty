@@ -30,7 +30,7 @@ void file_reader(FILE *fd)
 	while (getline(&file_cmd.current_line, &n, fd) != -1)
 	{
 		line = strtok(file_cmd.current_line, " \n");
-		if (line == NULL)
+		if (line == NULL || line[0] == '#')
 		{
 			line_number++;
 			continue;

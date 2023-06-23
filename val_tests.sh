@@ -38,3 +38,6 @@ valgrind ./monty bytecodes/21.m
 
 echo "executing bytecodes/22.m (mod)"
 valgrind ./monty bytecodes/22.m
+
+echo "executing bytecodes/2.m"
+valgrind ./monty bytecodes/2.m
