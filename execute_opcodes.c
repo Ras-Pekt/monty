@@ -23,13 +23,12 @@ void execute_opcodes(char *line, stack_t **stack, instruction_t *opcodes,
 				if (token == NULL || _isdigit(token) == 1)
 				{
 					fprintf(stderr, "L%d: usage: push integer\n", line_number);
+					free_resources(file_cmd.current_line, stack, file_cmd.fd);
 					exit(EXIT_FAILURE);
 				}
-				/* Execute the push function */
 				opcodes[i].f(stack, atoi(token));
 			}
 			else
-				/* Execute other functions not push */
 				opcodes[i].f(stack, line_number);
 
 			return;
@@ -37,5 +36,6 @@ void execute_opcodes(char *line, stack_t **stack, instruction_t *opcodes,
 		i++;
 	}
 	fprintf(stderr, "L%d: unknown instruction %s\n", line_number, line);
+	free_resources(file_cmd.current_line, stack, file_cmd.fd);
 	exit(EXIT_FAILURE);
 }

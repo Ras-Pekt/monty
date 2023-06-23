@@ -12,13 +12,17 @@ void _div(stack_t **stack, unsigned int line_number)
 
 	if (*stack == NULL || (*stack)->next == NULL)
 	{
-		fprintf(stderr, "L%d: can't div, stack too short", line_number);
+		fprintf(stderr, "L%d: can't div, stack too short\n", line_number);
+		free_resources(file_cmd.current_line, stack, file_cmd.fd);
+		/*free_stack(*stack);*/
 		exit(EXIT_FAILURE);
 	}
 	temp = (*stack)->next;
 	if ((*stack)->n == 0)
 	{
 		fprintf(stderr, "L%d: division by zero\n", line_number);
+		free_resources(file_cmd.current_line, stack, file_cmd.fd);
+		/*free_stack(*stack);*/
 		exit(EXIT_FAILURE);
 	}
 	n = temp->n / (*stack)->n;

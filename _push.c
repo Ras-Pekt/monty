@@ -13,6 +13,8 @@ void _push(stack_t **stack, unsigned int line_number)
 	if (new_node == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
+		free_resources(file_cmd.current_line, stack, file_cmd.fd);
+		/*free_stack(*stack);*/
 		exit(EXIT_FAILURE);
 	}
 

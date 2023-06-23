@@ -25,12 +25,13 @@ void file_reader(FILE *fd)
 		{NULL, NULL}
 	};
 
-	while (getline(&line, &n, fd) != -1)
+	file_cmd.current_line = NULL;
+
+	while (getline(&file_cmd.current_line, &n, fd) != -1)
 	{
-		line = strtok(line, " \n");
+		line = strtok(file_cmd.current_line, " \n");
 		if (line == NULL)
 		{
-			free(line);
 			line_number++;
 			continue;
 		}
@@ -39,5 +40,5 @@ void file_reader(FILE *fd)
 
 		line_number++;
 	}
-	fclose(fd);
+	free_resources(file_cmd.current_line, &stack, file_cmd.fd);
 }

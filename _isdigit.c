@@ -8,6 +8,9 @@ int _isdigit(char *str)
 {
 	while (*str)
 	{
+		if (str[0] == '-')
+			str++;
+
 		if (isdigit(*str++) == 0)
 			return (1);
 	}

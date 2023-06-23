@@ -38,6 +38,22 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/**
+ * struct input_cmd_s - file descriptor and line buffer
+ * @fd: file descriptor
+ * @current_line: line buffer for getline function
+ *
+ *  Description: file descriptor and line buffer
+ *  for stack, queues, LIFO, FIFO
+*/
+typedef struct input_cmd_s
+{
+	FILE *fd;
+	char *current_line;
+} input_cmd_t;
+
+extern input_cmd_t file_cmd;
+
 void _push(stack_t **stack, unsigned int line_number);
 void _pall(stack_t **stack, unsigned int line_number);
 void _pint(stack_t **stack, unsigned int line_number);
@@ -54,6 +70,7 @@ void file_reader(FILE *fd);
 int _isdigit(char *str);
 void execute_opcodes(char *line, stack_t **stack, instruction_t *opcodes,
 		   int line_number);
-void free_stack(stack_t **stack);
+void free_stack(stack_t *stack);
+void free_resources(char *current_line, stack_t **stack, FILE *fd);
 
 #endif
