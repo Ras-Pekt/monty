@@ -41,3 +41,6 @@ echo "executing bytecodes/22.m (mod)"
 
 echo "executing bytecodes/2.m"
 ./monty bytecodes/2.m
+
+echo "executing bytecodes/3.m (pchar)"
+./monty bytecodes/3.m
