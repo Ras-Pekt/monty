@@ -41,3 +41,10 @@ valgrind ./monty bytecodes/22.m
 
 echo "executing bytecodes/2.m"
 valgrind ./monty bytecodes/2.m
+
+echo "executing bytecodes/3.m (pchar)"
+valgrind ./monty bytecodes/3.m
+
+echo "executing bytecodes/31.m (pstr)"
+valgrind ./monty bytecodes/31.m
+

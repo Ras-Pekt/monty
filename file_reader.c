@@ -23,6 +23,7 @@ void file_reader(FILE *fd)
 		{"mul", _mul},
 		{"mod", _mod},
 		{"pchar", _pchar},
+		{"pstr", _pstr},
 		{NULL, NULL}
 	};
 
