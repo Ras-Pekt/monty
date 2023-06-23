@@ -19,8 +19,7 @@ void _pstr(stack_t **stack, unsigned int line_number)
 			if (temp->n < 1 || temp->n > 127)
 			{
 				printf("\n");
-				free_resources(file_cmd.current_line, stack, file_cmd.fd);
-				exit(EXIT_FAILURE);
+				return;
 			}
 			printf("%c", temp->n);
 			temp = temp->next;
