@@ -51,3 +51,5 @@ echo "executing bytecodes/31.m (pstr)"
 echo "executing bytecodes/35.m (rotl)"
 ./monty bytecodes/35.m
 
+echo "executing bytecodes/36.m (rotr)"
+./monty bytecodes/36.m

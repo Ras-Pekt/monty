@@ -53,3 +53,6 @@ valgrind ./monty bytecodes/35.m
 
 echo "executing bytecodes/35.m (rotl)"
 valgrind ./monty bytecodes/35.m
+
+echo "executing bytecodes/36.m (rotr)"
+valgrind ./monty bytecodes/36.m
