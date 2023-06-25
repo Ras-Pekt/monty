@@ -14,7 +14,6 @@ void _sub(stack_t **stack, unsigned int line_number)
 	{
 		fprintf(stderr, "L%d: can't sub, stack too short\n", line_number);
 		free_resources(file_cmd.current_line, stack, file_cmd.fd);
-		/*free_stack(*stack);*/
 		exit(EXIT_FAILURE);
 	}
 	temp = (*stack)->next;

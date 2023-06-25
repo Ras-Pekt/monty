@@ -6,16 +6,16 @@ valgrind ./monty bytecodes/000.m
 echo "executing bytecodes/001.m"
 valgrind ./monty bytecodes/001.m
 
-echo "executing bytecodes/00 (push and pall).m"
+echo "executing bytecodes/00.m (push and pall)"
 valgrind ./monty bytecodes/00.m
 
 echo "executing bytecodes/01.m"
 valgrind ./monty bytecodes/01.m
 
-echo "executing bytecodes/06 (pint).m"
+echo "executing bytecodes/06.m (pint)"
 valgrind ./monty bytecodes/06.m
 
-echo "executing bytecodes/07 (pop).m"
+echo "executing bytecodes/07.m (pop)"
 valgrind ./monty bytecodes/07.m
 
 echo "executing bytecodes/09.m (swap)"
@@ -48,3 +48,8 @@ valgrind ./monty bytecodes/3.m
 echo "executing bytecodes/31.m (pstr)"
 valgrind ./monty bytecodes/31.m
 
+echo "executing bytecodes/35.m (pstr)"
+valgrind ./monty bytecodes/35.m
+
+echo "executing bytecodes/35.m (rotl)"
+valgrind ./monty bytecodes/35.m

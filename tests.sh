@@ -6,16 +6,16 @@ echo "executing bytecodes/000.m"
 echo "executing bytecodes/001.m"
 ./monty bytecodes/001.m
 
-echo "executing bytecodes/00 (push and pall).m"
+echo "executing bytecodes/00.m (push and pall)"
 ./monty bytecodes/00.m
 
 echo "executing bytecodes/01.m"
 ./monty bytecodes/01.m
 
-echo "executing bytecodes/06 (pint).m"
+echo "executing bytecodes/06.m (pint)"
 ./monty bytecodes/06.m
 
-echo "executing bytecodes/07 (pop).m"
+echo "executing bytecodes/07.m (pop)"
 ./monty bytecodes/07.m
 
 echo "executing bytecodes/09.m (swap)"
@@ -47,4 +47,7 @@ echo "executing bytecodes/3.m (pchar)"
 
 echo "executing bytecodes/31.m (pstr)"
 ./monty bytecodes/31.m
+
+echo "executing bytecodes/35.m (rotl)"
+./monty bytecodes/35.m
 
